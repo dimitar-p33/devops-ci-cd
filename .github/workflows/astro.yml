@@ -63,8 +63,7 @@ jobs:
       - name: Install dependencies 
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
-     
-build:
+ build:
     name: Build
     needs: test
     runs-on: ubuntu-latest
